@@ -4,3 +4,12 @@ cd PROJECT
 npx create-react-app .
 
 # set up directories
+# group components & css
+    mkdir components
+    mkdir css
+    move App.js to components
+    move logo.svg to components
+    move App.css to css
+    move index.css to css
+    change import in App.js to import '../css/App.css';
+    change import in index.js to import '../css/index.css';
