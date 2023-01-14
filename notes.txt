@@ -1,0 +1,6 @@
+# create a reat project
+mkdir "PROJECT"
+cd PROJECT
+npx create-react-app .
+
+# set up directories
