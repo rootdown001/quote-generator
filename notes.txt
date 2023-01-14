@@ -13,3 +13,26 @@ npx create-react-app .
     move index.css to css
     change import in App.js to import '../css/App.css';
     change import in index.js to import '../css/index.css';
+
+
+
+*, *::before, *::after {
+  font-family: Gotham Rounded, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  
+}
+
+
+#quote-box {
+    width: 450px;
+    background-color: #fce8df;
+    border-radius: 3px;
+    position:relative;
+    padding: 40px 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
