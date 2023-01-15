@@ -10,7 +10,7 @@ export default function QuoteBox({quoteObject, handleNewQuote}) {
             <div className="quote-author">~ <span id="author">{quoteObject.author}</span>
             </div>
             <div className="button-row">
-                <button className="btn" id="tweet-quote" ><a href="https://twitter.com/intent/tweet" target="_top"><i class="fa fa-twitter"></i></a></button>
+                <button className="btn" id="tweet-btn" ><a href="https://twitter.com/intent/tweet" target="_top" id="tweet-quote"><i class="fa fa-twitter"></i></a></button>
                 <button className="btn" id="new-quote" onClick={() => handleNewQuote()} >New Quote</button>
             </div>
         </div>
