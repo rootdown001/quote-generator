@@ -1,16 +1,94 @@
-@import-normalize; 
-@import "quote-box.css" ;
 
-*, *::before, *::after {
-  font-family: Gotham Rounded, sans-serif;
-  box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
 }
 
-html {
-  font-size: 25px;
+
+div {
+  position: relative;
+  z-index: 2;
 }
+
 
 body {
-  padding: 0;
-  margin: 0;
+  background-color: hsl(202, 30%, 72%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#quote-box {
+  position: relative;
+  width: 480px;
+  padding: 40px 50px;
+  display: table;
+  background-color: #fce8df;
+  color: hsl(202, 30%, 36%);
+}
+
+#quote-box .quote-text {
+  text-align: center;
+  width: 480px;
+  height: auto;
+  clear: both;
+  font-size: 1.75em;
+  
+}
+
+#quote-box .quote-text i {
+  font-size: 1em;
+  margin-right: 0.4em;
+}
+
+#quote-box .quote-author {
+  width: 480px;
+  height: auto;
+  clear: both;
+  padding-top: 20px;
+  font-size: 1em;
+  text-align: right;
+}
+
+#quote-box .button-row {
+  width: 480px;
+  margin: auto;
+  display: block;
+}
+
+.btn {
+  border-radius: 6px;
+  height: 34px;
+ 
+  border: none;
+  color:#fce8df ;
+  background-color: hsl(202, 30%, 36%);
+  outline: none;
+  
+  font-size: 0.85em;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+.btn i {
+  font-size: 1.2em;
+  text-align: center;
+  
+}
+
+#tweet-quote {
+  text-align: center;
+  float: left;
+  width: 34px;
+}
+
+#new-quote {
+  float: right;
+  width: auto;
+  padding: 8px 18px 6px 18px;
 }
