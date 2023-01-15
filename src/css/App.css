@@ -67,28 +67,28 @@ body {
   color:#fce8df ;
   background-color: hsl(202, 30%, 36%);
   outline: none;
-  
+
   font-size: 0.85em;
   margin-top: 30px;
   opacity: 1;
   cursor: pointer;
 }
 
-
-.btn i {
-  font-size: 1.2em;
-  text-align: center;
-  
-}
-
 #tweet-quote {
-  text-align: center;
   float: left;
   width: 34px;
+
 }
 
 #new-quote {
   float: right;
   width: auto;
   padding: 8px 18px 6px 18px;
+  
+}
+
+.btn i {
+  font-size: 1.1em;
+  
+  color:#fce8df;
 }
