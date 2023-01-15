@@ -1,15 +1,30 @@
+import React, { useState } from 'react';
+
 import '../css/App.css';
 import QuoteBox from './QuoteBox';
 
 
 function App() {
+
+  function randomIndex() {
+    return Math.floor(Math.random() * quoteList.length)
+  } 
+  
+  const [ quoteObject, setQuoteObject ]= useState(quoteList[randomIndex()])
+  console.log(quoteObject)
+
+   function handleNewQuote() {
+    const newQuote = quoteList[randomIndex()]
+    setQuoteObject(newQuote)
+   }
+
   return (
     <div>
-      <QuoteBox />
+      <QuoteBox quoteObject={quoteObject} handleNewQuote={handleNewQuote}/>
     </div>
   );
 }
-
+ 
 const quoteList = [
   {id: 1, quote: "Life is what happens when you're busy making other plans.", author: "John Lennon"},
   {id: 2, quote: "Get busy living or get busy dying.", author: "Stephen King"},
